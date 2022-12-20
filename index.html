@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Multimedia Magic - Audio Visual Heaven">
+    <meta name="keywords" content="Multimedia Magic - Audio Visual Heaven">
+    <meta name="author" content="Mateusz Mróz">
+
+    <title>Multimedia Magic - Audio Visual Heaven</title>
+
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+    <main class="main">
+        <canvas id="canvas"></canvas>
+        <span class="music__controller">
+            <button id="toggle__music-button">
+                <i class="ri-music-2-fill"></i>
+            </button>
+            <audio id="music" src="assets/audio/GG.ogg"></audio>
+        </span>
+        <header class="header">
+            <div class="nav container">
+                <div data-aos="fade-down-right" data-aos-duration="1000" class="nav__logo">
+                    <a href="#home" class="text__filter navlink">
+                        <div class="nav__img">
+                            <img class="nav__img" src="assets/img/icon.png" alt="Multimedia Magic">
+                        </div>
+                        <div class="nav__name">
+                            <span class="blast">M</span><span class="blast">u</span><span class="blast">l</span><span
+                                class="blast">t</span><span class="blast">i</span><span class="blast">m</span><span
+                                class="blast">e</span><span class="blast">d</span><span class="blast">i</span><span
+                                class="blast">a</span> <span class="blast">M</span><span class="blast">a</span><span
+                                class="blast">g</span><span class="blast">i</span><span class="blast">c</span>
+                        </div>
+                    </a>
+                </div>
+                <nav data-aos="fade-down-left" data-aos-duration="1000" class="navbar">
+                    <ul class="nav__list text__filter">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link navlink">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#scaling" class="nav__link navlink">Scaling</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#fps" class="nav__link navlink">FPS</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#books" class="nav__link navlink">Books</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#audiobooks" class="nav__link navlink">Audiobooks</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#lector" class="nav__link navlink">Lector</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button data-aos="fade-down-left" data-aos-duration="1000" class="burger text__filter">
+                    <svg id="burger-svg">
+                        <rect class="burger-svg__base" />
+                        <title>Menu</title>
+                        <g class="burger-svg__bars">
+                            <rect class="burger-svg__bar-1" rx="3" x="5" y="11" width="40" height="4" />
+                            <rect class="burger-svg__bar-2" rx="3" x="5" y="23" width="40" height="4" />
+                            <rect class="burger-svg__bar-3" rx="3" x="5" y="35" width="40" height="4" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <!-- =============== HOME =============== -->
+        <section class="home section" id="home">
+            <div class="home__img"></div>
+            <div class="container grid">
+                <div class="home__data">
+                    <h1 data-aos="zoom-out" data-aos-duration="2000" class="home__title" aria-label="Multimedia Magic">
+                        <a href="./Software Downloads/Multimedia Magic - Audio Visual Heaven.rar">
+                            <span class="blast">M</span><span class="blast">u</span><span class="blast">l</span><span
+                                class="blast">t</span><span class="blast">i</span><span class="blast">m</span><span
+                                class="blast">e</span><span class="blast">d</span><span class="blast">i</span><span
+                                class="blast">a</span>
+                            <br>
+                            <span class="blast">M</span><span class="blast">a</span><span class="blast">g</span><span
+                                class="blast">i</span><span class="blast">c</span>
+                        </a>
+                    </h1>
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"
+                        class="home__subtitle text__filter" aria-label="Audio Visual Heaven"> <a href="#scaling"
+                            class="navlink">
+                            <span class="blast">A</span><span class="blast">u</span><span class="blast">d</span><span
+                                class="blast">i</span><span class="blast">o</span> <span class="blast">V</span><span
+                                class="blast">i</span><span class="blast">s</span><span class="blast">u</span><span
+                                class="blast">a</span><span class="blast">l</span> <span class="blast">H</span><span
+                                class="blast">e</span><span class="blast">a</span><span class="blast">v</span><span
+                                class="blast">e</span><span class="blast">n</span>
+                            <div class="home__scroll__down__center text__filter">
+                                <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                </div>
+                </h2>
+            </div>
+            </div>
+            <div class="home__scroll__down text__filter">
+                <span>Scroll Down</span>
+                <i class="ri-arrow-down-line"></i>
+            </div>
+            <div class="home__scroll__down scroll__down-right text__filter">
+                <span>Scroll Down</span>
+                <i class="ri-arrow-down-line"></i>
+            </div>
+        </section>
+        <!-- =============== SCALING =============== -->
+        <section class="section" id="scaling">
+            <div class="container grid">
+                <div class="content">
+                    <div class="data">
+                        <h2 data-aos="fade-up" class="section__title text__filter" aria-label="Scaling">
+                            <span class="blast">S</span><span class="blast">c</span><span class="blast">a</span><span
+                                class="blast">l</span><span class="blast">i</span><span class="blast">n</span><span
+                                class="blast">g</span>
+                        </h2>
+                        <h3 data-aos="fade-up" class="section__subtitle text__filter">
+                            Real-ESRGAN – Skalowanie, Ulepszanie Obrazów i Anime
+                        </h3>
+                        <ol class="steps__list">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    <a href="https://www.python.org/downloads/" class="link" target="_blank">Instalacja
+                                        Pythona</a>
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Czy działa? <br>
+                                            W CMD wpisz: python --version
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/1.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="data">
+                        <ol class="steps__list" start="2">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z" class="link"
+                                        target="_blank">Instalacja FFmpeg</a>
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            W zmiennych środowiskowych w PATH dodaj ścieżkę do folderu:
+                                            C:\FFmpeg\bin
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Czy działa? <br>
+                                            W CMD wpisz: ffmpeg -version
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/2.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="data">
+                        <ol class="steps__list" start="3">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    <a href="https://www.mediafire.com/file/68o363fbeokdt9w/VulkanRT-Install.zip/file"
+                                        class="link" target="_blank">Instalacja vulkan-1.dll</a>
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/3.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="data">
+                        <ol class="steps__list" start="4">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Żeby skalowanie działało musisz mieć kartę graficzną, w miarę procesor i jeszcze
+                                    więcej RAMu i jak chcesz skalować anime – 500GB na dysku :D
+                                </p>
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Moi ludzie pracują nad lepszym rozwiązaniem, jak tylko będzie za darmo to wrzucę na
+                                    stronę.
+                                </p>
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    <a href="https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan" class="link"
+                                        target="_blank">Real-ESRGAN-ncnn-vulkan – GitHub</a>
+                                </p>
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    <a href="https://github.com/mafiosnik777/enhancr" class="link"
+                                        target="_blank">Enhancr – GitHub ("Moi ludzie")</a>
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/4.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/5.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="data">
+                        <ol class="steps__list" start="5">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Pobierz Program do Skalowania / Ulepszania Obrazów i Anime
+                                </p>
+                            </li>
+                        </ol>
+                        <div class="data__img">
+                            <div data-aos="fade-up" class="button__area">
+                                <div class="button__wrapper">
+                                    <a class="button"
+                                        href="../Software Downloads/Real-ESRGAN Skalowanie Ulepszanie Obrazów i Anime.rar"
+                                        target="_blank" download>
+                                        POBIERZ
+                                    </a>
+                                    <div class="button__bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="steps__list" start="6">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Zapoznaj się z funkcjami programu<br>
+                                    Zalecane przejrzeć zawartość pliku start.py
+                                </p>
+                            </li>
+                            <ol class="steps__list">
+                                <li class="step__item">
+                                    <p data-aos="fade-up" class="normal__text text__filter">
+                                        start.py – program startowy <br>
+                                        clean_frames.py – czyszczenie folderów tymczasowych
+                                    </p>
+                                </li>
+                                <li class="step__item">
+                                    <p data-aos="fade-up" class="normal__text text__filter">
+                                        ./input – tam wkładasz pliki video, audio, obrazy <br>
+                                        ./output – tam otrzymujesz wyniki działania
+                                    </p>
+                                </li>
+                                <li class="step__item">
+                                    <p data-aos="fade-up" class="normal__text text__filter">
+                                        Jeśli pomyślnie przeszedłeś przez wszystkie kroki, to możesz wybrać jedną z
+                                        opcji
+                                        uruchamiając start.py:
+                                    </p>
+                                    <p data-aos="fade-up" class="normal__text text__filter">
+                                        1. Ulepsz i skaluj zdjęcia<br>
+                                        2. Ulepsz i skaluj anime / film<br>
+                                        3. Kopiuj część filmu lub audio<br>
+                                        4. Wyświetl informacje o pliku video lub audio<br>
+                                        5. Konwertuj audio i obraz do video<br>
+                                        6. Podziel video na 1 minutowe klipy<br>
+                                        7. Wypal napisy do video<br>
+                                        8. Dodaj ścieżkę dźwiękową lektora do video<br>
+                                        9. Wypal napisy i dodaj ścieżkę dźwiękową lektora do video
+                                    </p>
+                                </li>
+                            </ol>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/6.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/7.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/8.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============== FPS =============== -->
+        <section class="section" id="fps">
+            <div class="container grid">
+                <div class="content">
+                    <div class="data">
+                        <h2 data-aos="fade-up" class="section__title text__filter" aria-label="FPS">
+                            <span class="blast">F</span><span class="blast">P</span><span class="blast">S</span>
+                        </h2>
+                        <h3 data-aos="fade-up" class="section__subtitle text__filter">
+                            Flowframes – Szybka Interpolacja Wideo Dla Dowolnego Procesora Graficznego
+                        </h3>
+                        <ol class="steps__list">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    <a href="https://nmkd.itch.io/flowframes" class="link" target="_blank">Instalacja
+                                        Flowframes</a>
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Wybierz swój plik video i dostosuj ustawienia do swoich preferencji
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Zalecane jest najpierw zwiększanie FPS, a potem skalowanie poprzednim
+                                            programem w ten sposób można uzyskać np.: Anime 8K 125 FPS – gdzie trudno
+                                            jest w ogóle programom to wyświetlać
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Zalecana proporcja 4K~8K – 50~75 FPS –
+                                            mniejsze prawdopodobieństwo wystąpienia błędów interpolacji
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <div class="data__img">
+                            <div data-aos="fade-up" class="button__area">
+                                <div class="button__wrapper">
+                                    <a class="button" href="../Software Downloads/Flowframes Więcej FPS.rar"
+                                        target="_blank" download>
+                                        POBIERZ
+                                    </a>
+                                    <div class="button__bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/9.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up"
+                                src="https://nmkd.de/interpwiki/lib/exe/fetch.php?cache=&media=demo2.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="https://nmkd.de/content/img/guraDanceShort-comparison-h.gif"
+                                alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============== BOOKS =============== -->
+        <section class="section" id="books">
+            <div class="container grid">
+                <div class="content">
+                    <div class="data">
+                        <h2 data-aos="fade-up" class="section__title text__filter" aria-label="Books">
+                            <span class="blast">B</span><span class="blast">o</span><span class="blast">o</span><span
+                                class="blast">k</span><span class="blast">s</span>
+                        </h2>
+                        <h3 data-aos="fade-up" class="section__subtitle text__filter">
+                            Pobieranie i Translacja Tekstów <br> z Internetu
+                        </h3>
+                        <div class="data__img">
+                            <div data-aos="fade-up" class="button__area">
+                                <div class="button__wrapper">
+                                    <a class="button" href="../Software Downloads/Flowframes Więcej FPS.rar"
+                                        target="_blank" download>
+                                        POBIERZ
+                                    </a>
+                                    <div class="button__bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="steps__list">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Wyjaśnienia dotyczące plików:
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            webs1.txt – link do strony z powiększającym się indeksem liczby
+                                            rozdziałów<br>
+                                            webs2.txt – lista stron z których chce się pobrać text<br>
+                                            webs3.txt – lista stron które zostały napisane przez skrypt url.py
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            webs1.txt – link do strony z powiększającym się indeksem liczby
+                                            rozdziałów
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            webs2.txt – lista stron z których chce się pobrać text
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            url.py – dodaje prostą iterację numeracji do linków do rozdziałów
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            test.py – testy i nowe rozwiązania
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Enter_After_Dot.py – wstawianie enterów po kropkach, przydatne przy
+                                            tłumaczeniu jeśli cały rozdział został skopiowany do jednej linijki
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Books.py – główny plik roboczy pobiera, tłumaczy, usuwa niepotrzebne znaki
+                                            czytane przez syntezator, dzieli rozdziały (po kilkadziesiąt na odcinek
+                                            audiobooka), dodaje tytuły angielskie i polskie, dodaje numerację odcinka,
+                                            tworzy pliki przystosowane do robienia z nich audiobooka
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            0.txt – tam zapisywane są wszystkie rozdziały, tłumaczenie, UWAGA jeśli
+                                            wystąpi problem z pobieraniem, lub tłumaczeniem zalecane jest skopiowanie
+                                            zawartości do bezpiecznej lokalizacji, przy każdym otwarciu plik kasuje
+                                            swoją zawartość
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            nowy xxx.text – pliki odcinkowe przystosowane do robienia audiobooka
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    (Zainstaluj Pythona)<br>
+                                    Przed rozpoczęciem należy przejrzeć pliki i zapoznać się z instrukcjami w nich
+                                    zawartymi, by wszystko działało należy:<br>
+                                    W VSC Ctrl + ~ > do terminala skopiować polecenia do pobrania bibliotek:<br>
+                                    pip install -U selenium<br>
+                                    pip install googletrans<br>
+                                    pip install googletrans==3.1.0a0<br>
+                                    pip install requests<br>
+                                    pip install bs4<br>
+                                </p>
+                            </li>
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Do jednego ze sposobów należy pobrać ChromeDriver i przenieść do odpowiedniego
+                                    katalogu, program jest zależny od wersji Google Chrome którą posiadasz:<br>
+                                    ChromeDriver z twoją wersją Chrome -> C:\ Program Files (x86)\chromedriver.exe
+                                </p>
+                            </li>
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Wszystkie parametry programu – są opisane <br>w Books.py i trzeba zmieniać je do
+                                    swoich
+                                    preferencji<br>
+                                    Uwaga: zaleca się otwieranie tylko pliku nadrzędnego do Books.py
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/10.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/11.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/12.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/13.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/14.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- =============== AUDIOBOOKS =============== -->
+        <section class="section" id="audiobooks">
+            <div class="container grid">
+                <div class="content">
+                    <div data-aos="fade-up" class="data">
+                        <h2 class="section__title text__filter" aria-label="Audiobooks">
+                            <span class="blast">A</span><span class="blast">u</span><span class="blast">d</span><span
+                                class="blast">i</span><span class="blast">o</span><span class="blast">b</span><span
+                                class="blast">o</span><span class="blast">o</span><span class="blast">k</span><span
+                                class="blast">s</span>
+                        </h2>
+                        <h3 data-aos="fade-up" class="section__subtitle text__filter">
+                            Speech2Go – to program do konwersji tekstu na lektora
+                        </h3>
+
+                        <ol class="steps__list">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Z uwagi na 30 dniową wersję próbną zalecane jest korzystanie z wirtualnej maszyny i
+                                    tam wykonywać całą pracę, po 30 dniach można ją usunąć i zainstalować ponownie,
+                                    maszynę wirtualną, jak i program
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            <a href="https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html"
+                                                class="link" target="_blank">Instalacja VMware Workstation Player</a>
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            <a href="https://www.microsoft.com/pl-pl/software-download/windows11"
+                                                class="link" target="_blank">ISO Windows 11</a>
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Zainstaluj Speech2Go i jeden<br>z głosów:
+
+                                        <ol class="steps__list">
+                                            <li class="step__item">
+                                                <p data-aos="fade-up" class="normal__text text__filter">
+                                                    <a href="https://www.instalki.pl/programy/download/Windows/syntezatory_mowy/IVONA_Reader.html"
+                                                        class="link" target="_blank">Instalacjia Speech2Go</a>
+                                                </p>
+                                            </li>
+                                            <li class="step__item text__filter">
+                                                <p data-aos="fade-up" class="normal__text">
+                                                    <a href="http://www.phuimpuls.pl/nuance_gp_cd.html" class="link"
+                                                        target="_blank">Instalacjia Głosów</a>
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Jeśli chcesz możesz przekonwertować plik .mp3 na .mp4 by wrzucić go na YouTube:
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            <a href="https://www.onlineconverter.com/mp3-to-mp4" class="link"
+                                                target="_blank">Konwersja MP3 na MP4 (200MB)</a>
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            LUB Wybrać: 5. Konwertuj audio i obraz do video w start.py punktu SCALING
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <div class="data__img">
+                            <div data-aos="fade-up" class="button__area">
+                                <div class="button__wrapper">
+                                    <a class="button" href="../Software Downloads/Speech2Go AudioBooki.rar"
+                                        target="_blank" download>
+                                        POBIERZ
+                                    </a>
+                                    <div class="button__bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/15.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/16.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/17.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============== LECTOR =============== -->
+        <section class="section" id="lector">
+            <div class="container grid">
+                <div class="content">
+                    <div data-aos="fade-up" class="data">
+                        <h2 class="section__title text__filter" aria-label="Lector">
+                            <span class="blast">L</span><span class="blast">e</span><span class="blast">c</span><span
+                                class="blast">t</span><span class="blast">o</span><span class="blast">r</span>
+                        </h2>
+                        <h3 data-aos="fade-up" class="section__subtitle text__filter">
+                            Lektor IVO i Napisy Anime
+                        </h3>
+                        <div class="data__img">
+                            <div data-aos="fade-up" class="button__area">
+                                <div class="button__wrapper">
+                                    <a class="button" href="../Software Downloads/Lektor IVO i Napisy Anime.rar"
+                                        target="_blank" download>
+                                        POBIERZ
+                                    </a>
+                                    <div class="button__bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="steps__list">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Zainstaluj wszystkie programy
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            <a href="https://handbrake.fr/" class="link" target="_blank">HandBrake
+                                                (Dodatkowo)</a>
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            <a href="https://www.instalki.pl/programy/download/Windows/multimedia_inne/Aegisub.html"
+                                                class="link" target="_blank">Aegisub</a>
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            <a href="https://mkvtoolnix.download/downloads.html#windows" class="link"
+                                                target="_blank">MKVToolNix</a>
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            <a href="https://sourceforge.net/projects/gmkvextractgui/" class="link"
+                                                target="_blank">MKVExtractGUI</a>
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            <a href="https://www.instalki.pl/programy/download/Windows/syntezatory_mowy/IVONA_Reader.html"
+                                                class="link" target="_blank">Speech2Go + Głos Ivona</a>
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            SubtitleSpeak (w POBIERZ)
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/18.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div data-aos="fade-up" class="data">
+                        <ol class="steps__list" start="2">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Znajdź film z wbudowanymi napisami lub pobierz film i napisy – (najlepiej w
+                                    formacie video.mkv, napisy.ass)
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Ekstraktownie napisów (jeśli nie pobrano)
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            MKVExtractGUI
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Przeciągnij video do programu
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Zaznacz S_TEXT/ASS
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Podaj ścieżkę zapisu
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Extract
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/19.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/20.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/21.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div data-aos="fade-up" class="data">
+                        <ol class="steps__list" start="3">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Otwórz plik z napisami w Aegisub
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Podziel plik na linijki do lektora<br>i tłumaczenie poboczne tekstów
+                                            (wyświetlane w wideo)
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Zaznacz cały tekst lektora i go wytnij
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Zapisz pozostałe jako Napisy.ass (widoczne)
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Cofnij zmiany i usuń te które poprzednio nie usunięto (Ctrl + X, Shift +
+                                            Home/End)
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Zapisz pozostały tekst do zrobienia lektora jako Lektor.ass (Czytane)
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Otwórz Convert Subtitles to Srt <br>–
+                                            <a href="https://subtitletools.com/convert-subtitles-to-srt" class="link"
+                                                target="_blank">Subtitle Tools</a>
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Zamień Lektor.ass na [SubtitleTools.com] Lektor.srt
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Otwórz plik [SubtitleTools.com] Lektor.srt w notatniku i zapisz jako w
+                                            formacie ASCI
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/22.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/23.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/24.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/25.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div data-aos="fade-up" class="data">
+                        <ol class="steps__list" start="4">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Otwórz SubtitleSpeak Robienie Lektora > SubtitleSpeak.exe (na wirtualnej maszynie –
+                                    patrz Audiobooks)
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Wybierz głos IVONA
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Zaznacz [SubtitleTools.com] Lektor.srt
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Kliknij Czytaj Napisy
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Wynikiem będzie plik.wav z lektorem
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/26.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/27.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div data-aos="fade-up" class="data">
+                        <ol class="steps__list" start="5">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Jeśli chcesz możesz przeskalować lub zwiększyć ilość FPS w tym momencie
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Jeśli chcesz 4K najpierw przeskaluj potem FPS (Flowframes)
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Jeśli chcesz 8K najpierw FPS (Flowframes) potem skalowanie
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            UWAGA 8K – jest problematyczne zwłaszcza przy dużej ilości FPS
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Dodaj miękkie napisy – otwórz MKVToolNixGUI
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Przeciągnij tam plik.mkv i Napisy.ass
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Odznacz (zielone) napisy z video
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Zapisz plik jako MKV
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Naciśnij: Rozpocznij Multipleksowanie
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/28.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div data-aos="fade-up" class="data">
+                        <ol class="steps__list" start="7">
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Wypalanie napisów i dodanie lektora
+                                </p>
+                                <ol class="steps__list">
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Przejdź na samą górę instrukcji i zapoznaj się z działaniem programu w
+                                            Pythonie (start.py)
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Umieść plik z miękkimi napisami (lub bez napisów plik.mkv) i Lektor.wav w
+                                            folderze input
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Uruchom i start.py i wybierz 9. opcje - Aby wypalić napisy i dodać lektora
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            W zależności od potrzeb możesz wybrać: <br>
+                                            7. – by wypalić same napisy lub<br>
+                                            8. – by dodać lektora<br>
+                                            (w programie zamieniono 7. i 8.)
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Wypalony plik hardsub znajdziesz w folderze output
+                                        </p>
+                                    </li>
+                                    <li class="step__item">
+                                        <p data-aos="fade-up" class="normal__text text__filter">
+                                            Napisy poboczne będą widoczne, a dialogi będą czytane przez lektora
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="step__item">
+                                <p data-aos="fade-up" class="normal__text text__filter">
+                                    Możesz zainstalować program do odtwarzania
+                                    <a href="https://vlc-media-player.en.softonic.com/download" class="link"
+                                        target="_blank">VLC Media Player</a>
+                                </p>
+                            </li>
+                        </ol>
+                        <div class="data__img">
+                            <div data-aos="fade-up" class="button__area">
+                                <div class="button__wrapper">
+                                    <a class="button" href="../Software Downloads/VLC Media Player Odtwarzacz.rar"
+                                        target="_blank" download>
+                                        POBIERZ
+                                    </a>
+                                    <div class="button__bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/29.png" alt="image">
+                        </div>
+                        <div class="img__wrapper">
+                            <img data-aos="fade-up" src="assets/img/30.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== FOOTER =============== -->
+        <footer class="footer section">
+            <div class="container grid">
+                <div class="content">
+                    <div data-aos="fade-up" class="data">
+                        <h3 class="section__title text__filter" aria-label="Navigation">
+                            <span class="blast">N</span><span class="blast">a</span><span class="blast">v</span><span
+                                class="blast">i</span><span class="blast">g</span><span class="blast">a</span><span
+                                class="blast">t</span><span class="blast">i</span><span class="blast">o</span><span
+                                class="blast">n</span>
+                        </h3>
+                        <ul class="nav__list text__filter">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link navlink">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#scaling" class="nav__link navlink">Scaling</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#fps" class="nav__link navlink">FPS</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#books" class="nav__link navlink">Books</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#audiobooks" class="nav__link navlink">Audiobooks</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#lector" class="nav__link navlink">Lector</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-up" class="data">
+                        <h3 class="section__title text__filter" aria-label="Links & Contact">
+                            <span class="blast">L</span><span class="blast">i</span><span class="blast">n</span><span
+                                class="blast">k</span><span class="blast">s</span> <span class="blast">&</span> <span
+                                class="blast">C</span><span class="blast">o</span><span class="blast">n</span><span
+                                class="blast">t</span><span class="blast">a</span><span class="blast">c</span><span
+                                class="blast">t</span>
+                        </h3>
+                        <p class="normal__text text__filter">
+                            GitHub:
+                            <br>
+                            <a href="https://github.com/MattyMroz" class="link" target="_blank">MattyMroz</a>
+                        </p>
+                        <p class="normal__text text__filter">
+                            Repository:
+                            <br>
+                            <a href="https://github.com/MattyMroz/MultimediaMagic" class="link"
+                                target="_blank">MultimediaMagic</a>
+                        </p>
+                        <p class="normal__text text__filter">
+                            Email:
+                            <br>
+                            <a href="mailto:mateuszmroz001@gmail.com" class="link"> mateuszmroz001@gmail.com</a>
+                        </p>
+                    </div>
+                    <div data-aos="fade-up" class="data">
+                        <h3 class="section__title text__filter" aria-label="Quote">
+                            <span class="blast">Q</span><span class="blast">u</span><span class="blast">o</span><span
+                                class="blast">t</span><span class="blast">e</span>
+                        </h3>
+                        <blockquote>
+                            <p class="normal__text text__filter">
+                                "Nauka to nie tylko zdobywanie wiedzy, ale również
+                                dzielenie się nią z innymi."</p>
+                            <footer class="normal__text text__filter">
+                                <a href="https://pl.wikipedia.org/wiki/Neil_deGrasse_Tyson" class="link"
+                                    target="_blank">
+                                    Neil deGrasse Tyson
+                                </a>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div>
+                    <p class="text__filter">
+                        Mateusz Mróz &#10022 2022
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- =============== JQUERY =============== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <!-- =============== MAIN JS =============== -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- =============== AOS =============== https://github.com/michalsnik/aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script></script>
+</body>
+
+</html>
