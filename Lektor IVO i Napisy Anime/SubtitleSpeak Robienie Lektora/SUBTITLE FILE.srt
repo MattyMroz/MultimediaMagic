@@ -1,0 +1,8 @@
+1
+00:00:00,020 --> 00:00:03,850
+To jest przyk³adowy tekst, napisów.
+
+2
+00:00:00,020 --> 00:00:03,850
+-------¯eby otrzymaæ taki plik u¿yj konwertera online na plik kropka S R T
+
