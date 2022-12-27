@@ -391,6 +391,7 @@ textarea {
     height: 100vh;
     z-index: var(--z-1);
     /* filter: drop-shadow(0 0 3rem var(--first-color)) drop-shadow(0 0 3rem var(--first-color-alt)); */
+    /* filter: drop-shadow(0 0 3rem var(--shadow-color-2)); */
 }
 
 .music__controller {

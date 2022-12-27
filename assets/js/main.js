@@ -359,9 +359,10 @@ $(document).ready(function () {
 
             $hue += 1;
 
-            $canvas.style.filter = 'drop-shadow(0 0 3rem hsla(' + $hue + ', 100%, 50%, 0.5)) drop-shadow(0 0 1rem hsla(' + $hue + ', 100%, 50%, 0.5))';
+            // $canvas.style.filter = 'drop-shadow(0 0 3rem hsla(' + $hue + ', 100%, 50%, 0.5)) drop-shadow(0 0 1rem hsla(' + $hue + ', 100%, 50%, 0.5))';
 
-            // selection color
+            document.body.style.setProperty('--selection-color', 'hsla(' + $hue + ',100%, 60%, .2)');
+
             document.body.style.setProperty('--first-color', 'hsla(' + $hue + ',100%, 50%, .75)');
 
             document.body.style.setProperty('--first-color-alt', 'hsla(' + $hue + ',100%, 50%, .75)');
@@ -371,9 +372,6 @@ $(document).ready(function () {
         }
         animate();
     });
-
-    // ...
-
 
 
     // ========== Music ==========
