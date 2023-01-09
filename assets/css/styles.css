@@ -232,7 +232,6 @@ textarea {
     margin-left: 1.5rem;
 }
 
-
 .step__item {
     counter-increment: step;
     position: relative;
@@ -614,7 +613,6 @@ textarea {
     z-index: var(--z-1);
 }
 
-
 .home__data {
     display: flex;
     flex-direction: column;
@@ -633,7 +631,6 @@ textarea {
 
     filter: drop-shadow(0 0 0.75rem var(--first-color)) drop-shadow(0 0 0.75rem var(--first-color-alt));
 }
-
 
 .home__subtitle {
     font-size: var(--subtitle-font-size);
@@ -705,13 +702,7 @@ textarea {
     }
 }
 
-/* .home__subtitle {
-    font-family: var(--bold-font);
-    font-size: var(--subtitle-font-size);
-} */
-
 /* =============== SCROLL DOWN ELEMENT =============== */
-
 .home__scroll__down {
     position: absolute;
     left: .5rem;
@@ -840,15 +831,10 @@ textarea {
     transition: all 0.2s;
 }
 
-
-
-
 /* =============== FOOTER =============== */
 .footer {
-    margin-bottom: 5rem;
-    box-shadow: 0 4px 30px var(--shadow-color);
-    /* box-shadow: 0 4px 30px var(--shadow-color); */
     padding-bottom: 5rem;
+    box-shadow: 0 4px 30px var(--shadow-color);
 }
 
 .footer .content {
@@ -897,7 +883,6 @@ textarea {
 @media screen and (max-width: 320px) {} */
 
 
-
 @media screen and (max-width: 992px) {
     html {
         /* 8.8px */
@@ -937,7 +922,6 @@ textarea {
         top: 0;
         border-radius: 0;
     }
-
 
     .nav__list {
         flex-direction: column;
